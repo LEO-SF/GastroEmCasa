@@ -1,0 +1,42 @@
+.localizacao .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.localizacao .map-container {
+  flex: 1 1 50%;
+  max-width: 30%;
+  text-align: center;
+  color: #fff;
+}
+
+.localizacao .map-container iframe {
+  width: 100%;
+  height: 300px;
+  /* Ajuste a altura conforme necessário */
+}
+
+.localizacao .local {
+  flex: 1 1 50%;
+  max-width: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.localizacao .local h3 {
+  font-size: 1.8rem;
+  /* Aumente o tamanho da fonte conforme necessário */
+  margin-bottom: 1rem;
+}
+
+.localizacao .local p {
+  font-size: 1.4rem;
+  /* Aumente o tamanho da fonte conforme necessário */
+  margin-bottom: 0.5rem;
+}
+
+.localizacao .local strong {
+  font-weight: bold;
+}

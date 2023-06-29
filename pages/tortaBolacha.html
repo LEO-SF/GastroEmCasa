@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebalancear Receita</title>
+  <link rel="stylesheet" type="text/css" href="../css/global.css">
+  <link rel="stylesheet" type="text/css" href="../css/receitas.css">
+  <link rel="stylesheet" type="text/css" href="../css/header.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <a href="../index.html#home" class="logo">
+      <img src="../images/logoVazado.png" alt="logo">
+    </a>
+
+    <nav class="navbar">
+      <a href="../index.html#home">Inicio</a>
+      <a href="../index.html#about">Sobre</a>
+      <a href="../index.html#receitas">Receitas</a>
+      <a href="../index.html#dicas">Dicas</a>
+      <a href="../index.html#contact">Contato</a>
+      <a href="../index.html#localizacao">Localização</a>
+    </nav>
+
+  </header>
+  <h1>Receita de Torta de Bolacha</h1>
+
+  <div id="ingredientes">
+    <ul id="lista-receita">
+      <!-- Lista de ingredientes e quantidades -->
+      <li>
+        <span class="ingrediente">Bolacha Maizena</span>
+        <span class="quantidade">300</span>
+        <span class="unidades">gramas</span>
+      </li>
+      <li>
+        <span class="ingrediente">Manteiga derretida</span>
+        <span class="quantidade">150</span>
+        <span class="unidades">gramas</span>
+      </li>
+      <li>
+        <span class="ingrediente">Leite condensado</span>
+        <span class="quantidade">1</span>
+        <span class="unidades">lata</span>
+      </li>
+      <li>
+        <span class="ingrediente">Creme de leite</span>
+        <span class="quantidade">1</span>
+        <span class="unidades">lata</span>
+      </li>
+      <li>
+        <span class="ingrediente">Chocolate meio amargo</span>
+        <span class="quantidade">200</span>
+        <span class="unidades">gramas</span>
+      </li>
+      <li>
+        <span class="ingrediente">Açúcar</span>
+        <span class="quantidade">3</span>
+        <span class="unidades">colheres de sopa</span>
+      </li>
+    </ul>
+
+    <h2 id="how">Como funciona o rebalanceamento? </h2>
+
+    <h3>Use as opções abaixo caso você não tenha algum ingrediente o suficiente.
+      Por exemplo, em uma receita que exija 3 ovos e você tenha apenas 2, é possível inserir
+      abaixo e rebalancear a receita para a quantidade ideal. Experimente!
+    </h3>
+
+    <label for="ingrediente-base">Opção de ingrediente:</label>
+    <select id="ingrediente-base">
+      <!-- Opções de ingredientes-->
+    </select>
+
+    <label for="quantidade-base">Quantidade atual:</label>
+    <input type="number" id="quantidade-base" min="0" step="0.1">
+
+    <button onclick="rebalancearReceita()">Rebalancear</button>
+  </div>
+
+  <ul id="resultado"></ul>
+
+  <h2>Modo de Preparo:</h2>
+  <ol>
+    <li>Misture a bolacha maizena triturada com a manteiga derretida.</li>
+    <li>Forre o fundo de uma forma com a massa de bolacha.</li>
+    <li>Em uma tigela, misture o leite condensado, o creme de leite e chocolate.</li>
+    <li>Despeje o creme sobre a massa de bolacha na forma.</li>
+    <li>Leve à geladeira por aproximadamente 4 horas ou até que esteja firme.</li>
+    <li>Retire da geladeira e sirva gelado.</li>
+  </ol>
+
+  <footer>
+    <p>Todos os direitos reservados GastroEmCasa LTDA</p>
+  </footer>
+
+  <script src="../js/rebalanceamento.js"></script>
+</body>
+
+</html>

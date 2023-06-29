@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebalancear Receita</title>
+  <link rel="stylesheet" type="text/css" href="../css/global.css">
+  <link rel="stylesheet" type="text/css" href="../css/receitas.css">
+  <link rel="stylesheet" type="text/css" href="../css/header.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <a href="../index.html#home" class="logo">
+      <img src="../images/logoVazado.png" alt="logo">
+    </a>
+
+    <nav class="navbar">
+      <a href="../index.html#home">Inicio</a>
+      <a href="../index.html#about">Sobre</a>
+      <a href="../index.html#receitas">Receitas</a>
+      <a href="../index.html#dicas">Dicas</a>
+      <a href="../index.html#contact">Contato</a>
+      <a href="../index.html#localizacao">Localização</a>
+    </nav>
+
+  </header>
+
+  <h1>Receita de Bolo Comum</h1>
+
+  <div id="ingredientes">
+    <ul id="lista-receita">
+      <!-- Lista de ingredientes e quantidades -->
+      <li>
+        <span class="ingrediente">Farinha de trigo</span>
+        <span class="quantidade">3</span>
+        <span class="unidades">xícaras</span>
+      </li>
+      <li>
+        <span class="ingrediente">Açúcar</span>
+        <span class="quantidade">2</span>
+        <span class="unidades">xícaras</span>
+      </li>
+      <li>
+        <span class="ingrediente">Fermento em pó</span>
+        <span class="quantidade">1</span>
+        <span class="unidades">colher de sopa</span>
+      </li>
+      <li>
+        <span class="ingrediente">Sal</span>
+        <span class="quantidade">1/2</span>
+        <span class="unidades">colher de chá</span>
+      </li>
+      <li>
+        <span class="ingrediente">Leite</span>
+        <span class="quantidade">1</span>
+        <span class="unidades">xícara</span>
+      </li>
+      <li>
+        <span class="ingrediente">Manteiga derretida</span>
+        <span class="quantidade">1/2</span>
+        <span class="unidades">xícara</span>
+      </li>
+      <li>
+        <span class="ingrediente">Ovos</span>
+        <span class="quantidade">2</span>
+        <span class="unidades">unidades</span>
+      </li>
+      <li>
+        <span class="ingrediente">Extrato de baunilha</span>
+        <span class="quantidade">2</span>
+        <span class="unidades">colheres de chá</span>
+      </li>
+    </ul>
+
+    <h2 id="how">Como funciona o rebalanceamento? </h2>
+
+    <h3>Use as opções abaixo caso você não tenha algum ingrediente o suficiente.
+      Por exemplo, em uma receita que exija 3 ovos e você tenha apenas 2, é possível inserir
+      abaixo e rebalancear a receita para a quantidade ideal. Experimente!
+    </h3>
+
+    <label for="ingrediente-base">Opção de ingrediente:</label>
+    <select id="ingrediente-base">
+      <!-- Opções de ingredientes-->
+    </select>
+
+    <label for="quantidade-base">Quantidade atual:</label>
+    <input type="number" id="quantidade-base" min="0" step="0.1">
+
+    <button onclick="rebalancearReceita()">Rebalancear</button>
+  </div>
+
+  <ul id="resultado"></ul>
+
+  <h2>Modo de Preparo:</h2>
+  <ol>
+    <li>Misture a farinha de trigo, o açúcar, o fermento em pó e o sal em uma tigela.</li>
+    <li>Em outra tigela, bata os ovos, adicione o leite, a manteiga derretida e o extrato de baunilha, e misture bem.
+    </li>
+    <li>Combine os ingredientes líquidos e secos, mexendo até obter uma massa homogênea.</li>
+    <li>Aqueça uma frigideira antiaderente em fogo médio e despeje pequenas porções de massa, formando os discos da
+      torta.</li>
+    <li>Doure os dois lados dos discos até ficarem levemente dourados e firmes.</li>
+    <li>Retire os discos da frigideira e reserve.</li>
+    <li>Repita o processo com o restante da massa.</li>
+    <li>Sirva a torta de limão em temperatura ambiente ou gelada.</li>
+  </ol>
+
+  <footer>
+    <p>Todos os direitos reservados GastroEmCasa LTDA</p>
+  </footer>
+
+  <script src="../js/rebalanceamento.js"></script>
+
+</body>
+
+</html>

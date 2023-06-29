@@ -1,0 +1,32 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #f9f9f9;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--black);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.toggle-button {
+    background-color: var(--main-color);
+    color: var(--black);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.dark {
+    --main-color: #13131a;
+    --black: #f9f9f9;
+    --bg: #010103;
+}
